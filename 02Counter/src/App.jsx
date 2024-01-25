@@ -10,8 +10,11 @@ function App() {
   // let counter = 6
   const addValue = ()=>{
 if (counter<24) {
-  counter+=1
-  setCounter(counter)
+  // counter+=1
+  setCounter(prevCounter => prevCounter + 1)
+  setCounter(prevCounter => prevCounter + 1)
+  setCounter(prevCounter => prevCounter + 1)
+  
 }else{
   setCounter("You can't go above 24")
   counter = 24
